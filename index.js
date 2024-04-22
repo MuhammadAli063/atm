@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let pin = await inquirer.prompt({
     "name": "pinCode",
@@ -18,7 +19,7 @@ if (pin.pinCode == myPinCode) {
         "name": "option",
         "type": "list",
         "message": "Please select option",
-        "choices": ['withdraw', 'check your balance']
+        "choices": ['withdraw', 'check you balance']
     });
     // if withdraw
     if (option.option == 'withdraw') {
